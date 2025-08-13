@@ -52,7 +52,7 @@ const Why_us = () => {
                 </div>
 
                 <div className='container'>
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 md:mt-16 md:mt-32'>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 md:mt-16 md:mt-32'>
                         {
                             features.map((features, index) => (
                                 <div key={index} className='border border-[#0E122E] bg-[#00020F] rounded-2xl py-6 md:py-10 px-4 md:px-8 mb-4 relative'>

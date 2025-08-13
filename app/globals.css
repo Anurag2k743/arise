@@ -83,3 +83,7 @@ body{
   margin: 0 auto;
   padding: 0px 16px;
 }
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}

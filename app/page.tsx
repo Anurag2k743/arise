@@ -7,6 +7,9 @@ import Our_Mision from './Sections/Our_Mision'
 import Why_us from './Sections/Why_us'
 import Our_Design from './Sections/Our_Design'
 import About_us from './Sections/About_us'
+import Excellence from './Sections/Excellence'
+import Works from './Sections/Works'
+import Industry from './Sections/Industry'
 
 const page = () => {
   return (
@@ -21,7 +24,9 @@ const page = () => {
       <Why_us/>
       <Our_Design/>
       <About_us/>
-
+      <Excellence/>
+      <Works/>
+      <Industry/>
     </div>
   )
 }
