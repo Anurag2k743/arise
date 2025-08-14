@@ -1,4 +1,4 @@
-import Slider from "../Components/Slider";
+
 import { MoveRight } from 'lucide-react';
 
 const HeroSection = () => {
