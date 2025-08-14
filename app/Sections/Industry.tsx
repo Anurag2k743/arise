@@ -4,46 +4,47 @@ import Image from "next/image";
 const Industry = () => {
     return (
         <>
-            <section className="py-16 md:py-48 bg-[#00020F]">
-                <div className="relative py-20 md:py-24 lg:py-36 overflow-hidden">
-                    
-                    {/* Left Shape */}
-                    <div className="absolute left-0 top-0 h-[400px] lg:h-[527px] w-[400px] md:w-[500px] lg:w-[652px]">
-                        <Image
-                            src="/Industry_left.png"
-                            alt="Left Shape"
-                            fill
-                            className="object-cover"
-                        />
-                        {/* Full gradient overlay - only on mobile to laptop */}
-                        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,4,31,0)_0%,#00041F_100%)] lg:hidden"></div>
-                    </div>
+            <section className="bg-[#00020F]  py-16 md:py-24 lg:py-48">
+                <div className="relative">
+                    <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,4,31,0)_0%,#00041F_100%)] lg:hidden z-10"></div>
 
-                    {/* Right Shape */}
-                    <div className="absolute right-0 top-0 h-[400px] lg:h-[527px] w-[400px] md:w-[500px] lg:w-[652px]">
-                        <Image
-                            src="/Industry_right.png"
-                            alt="Right Shape"
-                            fill
-                            className="object-cover"
-                        />
-                        {/* Full gradient overlay - only on mobile to laptop */}
-                        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,4,31,0)_0%,#00041F_100%)] lg:hidden"></div>
-                    </div>
+                    <div className="relative h-[450px] md:h-[570px] flex items-center justify-center overflow-hidden">
+                        {/* Left Image */}
+                        <div className="absolute left-0 top-0 h-[570px] w-[652px]">
+                            <Image
+                                src="/Industry_left.png"
+                                alt="Left Shape"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
 
-                    {/* Center Content */}
-                    <div className="relative z-10 container text-center text-white">
-                        <p className="mb-3">Industry Insights</p>
-                        <h3 className="mb-4">
-                            Website Design Impacts <br /> Customer Retention
-                        </h3>
-                        <p className="max-w-xl mx-auto mb-6">
-                            Capture and retain more customers by optimizing your website’s
-                            design for engagement.
-                        </p>
-                        <button className="bg-blue-600 px-6 py-3 rounded-full">
-                            Start a Project
-                        </button>
+                        {/* Right Image */}
+                        <div className="absolute right-0 top-0 h-[570px] w-[652px]">
+                            <Image
+                                src="/Industry_right.png"
+                                alt="Right Shape"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+
+                        {/* Center Text Section */}
+                        <div className="relative z-20 container mx-auto flex items-center justify-center h-full">
+                            <div className="text-center text-white px-4 sm:px-6 max-w-2xl">
+                                <p className="mb-3">Industry Insights</p>
+                                <h3 className="mb-4">
+                                    Website Design Impacts Customer Retention
+                                </h3>
+                                <p className="max-w-xl mx-auto mb-6">
+                                    Capture and retain more customers by optimizing your website's
+                                    design for engagement.
+                                </p>
+                                <button className="bg-gradient-to-b from-[#4C75FF] to-[#1A4FFF] py-3 px-6 md:py-4 md:px-8 rounded-full text-white  ">
+                                    Start a Project
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

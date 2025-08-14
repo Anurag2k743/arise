@@ -51,7 +51,11 @@ const Permotionslides = () => {
           <Swiper
             modules={[Autoplay]}
             loop={true}
-            autoplay={{ delay: 2000, disableOnInteraction: false }}
+            speed={3000} // smooth speed
+            autoplay={{
+              delay: 0, // continuous scrolling
+              disableOnInteraction: false,
+            }}
             spaceBetween={12}
             slidesPerView={4}
             breakpoints={{

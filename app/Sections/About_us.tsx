@@ -52,13 +52,12 @@ const About_us = () => {
                                         <Image src="/btn_arrow.png" height={20} width={20} alt="arrowbtn" />
                                     </a>
                                 </button>
-
                                 <button>
                                     <a
                                         href="#contact"
                                         className="flex justify-center items-center gap-1 bg-[radial-gradient(100%_100%_at_50%_100%,#101636_14.38%,#0C1027_100%)] text-white py-2 sm:py-4 px-6 px-2 sm:px-8 rounded-full text-center transition hover:bg-gradient-to-b from-[#4C75FF] to-[#1A4FFF]"
                                     >
-                                        Contact Us
+                                        View Projects
                                         <Image src="/btn_arrow.png" height={20} width={20} alt="arrowbtn" />
                                     </a>
                                 </button>
