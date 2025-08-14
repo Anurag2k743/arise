@@ -1,4 +1,3 @@
-
 import { MoveRight } from 'lucide-react';
 
 const HeroSection = () => {
@@ -10,12 +9,11 @@ const HeroSection = () => {
           <div className="max-w-lg mx-auto hidden sm:block mt-8">
             <div className="bg-white/10 px-3 sm:px-4 py-1 sm:py-1.5 md:py-2 rounded-full backdrop-blur-md shadow-md mb-6 flex flex-wrap sm:flex-nowrap items-center justify-between gap-2">
               <p className="text-white whitespace-normal flex-1 text-center sm:text-left">
-                We Design websites that matter, user's can't resist
+                We Design websites that matter, user&apos;s can&apos;t resist
               </p>
               <MoveRight className="bg-gradient-to-b from-[#4C75FF] to-[#1A4FFF] w-[38px] h-[26px] rounded-full shrink-0" />
             </div>
           </div>
-
 
           <h1 className="mb-4 max-w-4xl w-full md:mx-auto">
             Design That Powers Real
