@@ -4,7 +4,7 @@ import Image from "next/image";
 const Industry = () => {
     return (
         <>
-            <section className="bg-[#00020F]  py-16 md:py-24 lg:py-48">
+            <section className="bg-[#00020F] py-16 md:py-24 lg:py-48">
                 <div className="relative">
                     <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,4,31,0)_0%,#00041F_100%)] lg:hidden z-10"></div>
 
@@ -37,10 +37,10 @@ const Industry = () => {
                                     Website Design Impacts Customer Retention
                                 </h3>
                                 <p className="max-w-xl mx-auto mb-6">
-                                    Capture and retain more customers by optimizing your website's
+                                    Capture and retain more customers by optimizing your website&apos;s
                                     design for engagement.
                                 </p>
-                                <button className="bg-gradient-to-b from-[#4C75FF] to-[#1A4FFF] py-3 px-6 md:py-4 md:px-8 rounded-full text-white  ">
+                                <button className="bg-gradient-to-b from-[#4C75FF] to-[#1A4FFF] py-3 px-6 md:py-4 md:px-8 rounded-full text-white">
                                     Start a Project
                                 </button>
                             </div>

@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -34,7 +35,7 @@ export default function Slider() {
           }}
           spaceBetween={20}
           slidesPerView="auto"
-          className="continuous-slider" // ✅ Custom class for styling
+          className="continuous-slider"
         >
           {projects.map((project, index) => {
             const isOdd = index % 2 !== 0;
@@ -48,14 +49,16 @@ export default function Slider() {
               >
                 <div className="rounded-2xl shadow-lg overflow-hidden w-full">
                   <div className="h-[307px] w-full">
-                    <img
+                    <Image
                       src={project.image}
                       alt={project.label}
+                      width={slideWidth}
+                      height={307}
                       className="w-full h-full object-cover rounded-2xl"
                     />
                   </div>
                   <div className="text-left py-2 px-2">
-                    <p className="text-sm text-white">{project.label}</p>
+                    <p className="text-sm text-white">{project.label.replace(/'/g, "&apos;")}</p>
                   </div>
                 </div>
               </SwiperSlide>
