@@ -81,10 +81,12 @@ const Pricing = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {pricingPlans.map((plan, idx) => (
                 <div key={idx} className="relative py-2">
-                  
+
                   {/* Highlight strip only on 2nd card */}
                   {idx === 1 && (
-                    <div className="absolute -top-10 left-0 right-0 h-16 bg-[#3362FF] rounded-t-3xl text-center pt-3 text-white">Most Popular</div>
+                    <div className="absolute -top-10 left-0 right-0 h-16 bg-[#3362FF] rounded-t-3xl text-center pt-3 text-white">
+                      Most Popular
+                    </div>
                   )}
 
                   <div className="bg-[#00041F] border border-[#162447] rounded-3xl p-7 text-white relative z-10">
@@ -107,7 +109,7 @@ const Pricing = () => {
                     <button className="w-full text-sm text-[#A7ADBE]">Book a Call →</button>
 
                     <div className="mt-5">
-                      <h5 className="font-semibold mb-2">What's included:</h5>
+                      <h5 className="font-semibold mb-2">What&apos;s included:</h5>
                       <ul className="space-y-2 text-sm">
                         {plan.features.map((feature, fIdx) => (
                           <li key={fIdx} className="flex items-center space-x-2">
@@ -115,7 +117,7 @@ const Pricing = () => {
                               {feature.available ? "✔" : "✖"}
                             </span>
                             <span className={feature.available ? "" : "text-gray-500"}>
-                              {feature.text}
+                              {feature.text.replace("'", "&apos;")}
                             </span>
                           </li>
                         ))}

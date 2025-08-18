@@ -13,6 +13,7 @@ import Comparision from './Sections/comparision'
 import Footer from './Components/Footer'
 import OurMision from './Sections/Our_Mision'
 import Services from './Sections/Services'
+import Pricing from './Sections/Pricing'
 
 const page = () => {
   return (
@@ -33,6 +34,7 @@ const page = () => {
       <Industry />
       <Comparision />
       <Services/>
+      <Pricing/>
       <Footer/>
 
     </>
