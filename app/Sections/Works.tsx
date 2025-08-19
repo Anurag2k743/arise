@@ -106,12 +106,11 @@ const Works = () => {
                     ))}
                 </div>
 
-                {/* View All Button */}
                 {!showAll && (
                     <div className='flex justify-center items-center w-full mt-6 md:mt-12'>
                         <button
                             onClick={() => setShowAll(true)}
-                            className=' py-3 px-4 md:py-4 md:px-5 flex justify-center items-center gap-1 border border-[#161C44] rounded-full bg-[radial-gradient(100%_100%_at_50%_100%,#101636_14.38%,#0C1027_100%)]'>
+                            className='py-3 px-6 md:py-4 md:px-8 flex justify-center items-center gap-1 border border-[#161C44] rounded-full bg-[radial-gradient(100%_100%_at_50%_100%,#101636_14.38%,#0C1027_100%)]'>
                             View All Works
                             <Image src="/work_arrow.png" height={20} width={20} alt='work_arrow' />
                         </button>

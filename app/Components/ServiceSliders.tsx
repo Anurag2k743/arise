@@ -6,7 +6,6 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 
-// JSON data for services
 const services = [
   { name: "Logo Design", icon: "/services1.png" },
   { name: "Social Post Design", icon: "/services2.png" },
@@ -40,15 +39,15 @@ const ServiceSliders = () => {
             spaceBetween={9}
             slidesPerView={3}
             breakpoints={{
-              480: { slidesPerView: 2, spaceBetween: 9 },
-              640: { slidesPerView: 3, spaceBetween: 9 },
-              768: { slidesPerView: 3, spaceBetween: 9 },
-              1024: { slidesPerView: 4, spaceBetween: 9 },
+              480: { slidesPerView: 2, spaceBetween: 4 },
+              640: { slidesPerView: 3, spaceBetween: 5},
+              768: { slidesPerView: 3, spaceBetween: 6 },
+              1024: { slidesPerView: 4, spaceBetween: 7 },
               1280: { slidesPerView: 5, spaceBetween: 9 },
             }}
           >
             {services.map((service, index) => (
-              <SwiperSlide key={index} className="rounded-full border border-[#1e2b55] bg-[#0b1224]/70 backdrop-blur-sm hover:opacity-100 opacity-90 transition duration-300 whitespace-nowrap">
+              <SwiperSlide key={index} className="rounded-full border border-[#1e2b55] bg-[#0b1224]/70 backdrop-blur-sm hover:opacity-100 opacity-90 transition duration-300 whitespace-nowrap overflow-hidden">
                 <div className="flex justify-center items-center gap-2 px-5 py-3 ">
                   <Image
                     src={service.icon}
@@ -59,7 +58,6 @@ const ServiceSliders = () => {
                   <span className="text-base text-white">{service.name}</span>
                 </div>
               </SwiperSlide>
-
             ))}
           </Swiper>
         </div>

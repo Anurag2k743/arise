@@ -58,7 +58,6 @@ const Pricing = () => {
           <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
             <Image src="/pricing.png" alt="rings background" className="w-[900px] sm:w-[1000px] opacity-50" width={717} height={268} />
           </div>
-
           <div className="container relative z-10">
             <div className="flex flex-col justify-center items-center w-full max-w-2xl mx-auto">
               <div className="flex items-center justify-center mb-4">
@@ -77,12 +76,10 @@ const Pricing = () => {
         </div>
 
         <section className='py-12'>
-          <div className="w-full lg:w-[1160px] mx-auto px-12">
+          <div className="w-full lg:w-[1160px] mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {pricingPlans.map((plan, idx) => (
-                <div key={idx} className="relative py-2">
-
-                  {/* Highlight strip only on 2nd card */}
+                <div key={idx} className={`relative py-2 ${idx === 1 ? 'mt-10 :mt-0' : ''}`}>
                   {idx === 1 && (
                     <div className="absolute -top-10 left-0 right-0 h-16 bg-[#3362FF] rounded-t-3xl text-center pt-3 text-white">
                       Most Popular
@@ -106,15 +103,19 @@ const Pricing = () => {
                     <button className="w-full bg-[#101636] py-3 rounded-full mb-3">
                       Get Started
                     </button>
-                    <button className="w-full text-sm text-[#A7ADBE]">Book a Call →</button>
+                    <button className="w-full text-sm text-[#A7ADBE] flex justify-center items-center">Book a Call <Image src="/bookcall.png" alt="check" width={20} height={20} className='ml-2' /></button>
 
                     <div className="mt-5">
-                      <h5 className="font-semibold mb-2">What&apos;s included:</h5>
+                      <h5 className="font-semibold mb-4">What&apos;s included:</h5>
                       <ul className="space-y-2 text-sm">
                         {plan.features.map((feature, fIdx) => (
-                          <li key={fIdx} className="flex items-center space-x-2">
+                          <li key={fIdx} className="flex items-center space-x-2 space-y-2 text-lg">
                             <span className="text-blue-400">
-                              {feature.available ? "✔" : "✖"}
+                              {feature.available ? <span className="flex items-center justify-center mr-2 h-[20px] w-[20px] bg-[#3363FF] rounded-full">
+                                <Image src="/check.png" alt="check" width={8} height={8} />
+                              </span> : <span className="flex items-center justify-center mr-2 h-[20px] w-[20px] bg-[#1c2354] rounded-full">
+                                <Image src="/cancel.png" alt="check" width={8} height={8} />
+                              </span>}
                             </span>
                             <span className={feature.available ? "" : "text-gray-500"}>
                               {feature.text.replace("'", "&apos;")}

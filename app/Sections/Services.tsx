@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from "next/image";
+import ServiceSliders from '../Components/ServiceSliders';
 const Services = () => {
     const servicesData = [
         {
@@ -64,8 +66,8 @@ const Services = () => {
                                         <button className='bg-[#0A0E2F] text-white text-sm px-6 py-3 rounded-full border border-[#161C44] hover:bg-gradient-to-b from-[#4C75FF] to-[#1A4FFF] transition'>
                                             <a
                                                 href={service.buttonLink}
-                                                className="" >
-                                                {service.buttonText} <span className="inline-block">↗</span>
+                                                className="flex justify-center items-center text-lg " >
+                                                {service.buttonText} <Image src="/btn_arrow.png" alt="arrow" width={20} height={20} className='ml-2' />
                                             </a>
                                         </button>
                                     </div>
@@ -77,17 +79,45 @@ const Services = () => {
                                     <div className="border-t border-[#161C44] mb-4"></div>
 
                                     {/* Features */}
-                                    <ul className="space-y-2">
+                                    <ul className="space-y-5">
                                         {service.features.map((feature, i) => (
                                             <li key={i} className="flex items-start text-gray-300 text-sm">
-                                                <span className="text-white mr-2 mt-[2px] h-[20px] w-[20px] bg-[#08951E] text-center rounded-full">✔</span>
+                                                <span className="flex items-center justify-center mr-2 h-[20px] w-[20px] bg-[#08951E] rounded-full">
+                                                    <Image src="/check.png" alt="check" width={8} height={8} />
+                                                </span>
                                                 {feature}
                                             </li>
+
                                         ))}
                                     </ul>
                                 </div>
                             ))}
                         </div>
+                        
+                        <div className="relative w-full mt-12">
+                            <div className="absolute inset-0 flex justify-center items-center">
+                                <div className="flex items-center px-4 bg-[#00020F] text-white text-sm">
+                                    <Image
+                                        src="/left_service.png"
+                                        alt="left arrow"
+                                        width={512}
+                                        height={19}
+                                        className="mr-2"  />
+
+                                    <span>Other Services</span>
+
+                                    <Image
+                                        src="/right_service.png"
+                                        alt="right arrow"
+                                        width={512}
+                                        height={19}
+                                        className="ml-2"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* <ServiceSliders /> */}
                     </div>
                 </section>
             </section>

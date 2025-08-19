@@ -14,6 +14,10 @@ import Footer from './Components/Footer'
 import OurMision from './Sections/Our_Mision'
 import Services from './Sections/Services'
 import Pricing from './Sections/Pricing'
+import Assurance from './Sections/Assurance'
+import Blogs from './Sections/Blogs'
+import Testimonials from './Sections/Testimonials'
+import Frequently from './Frequently'
 
 const page = () => {
   return (
@@ -22,10 +26,10 @@ const page = () => {
       <div className="-mt-80 md:-mt-60" >
         <Slider />
       </div>
-      
+
       <Permotionslides />
       <Brand />
-      <OurMision/>
+      <OurMision />
       <Why_us />
       <Our_Design />
       <About_us />
@@ -33,9 +37,13 @@ const page = () => {
       <Works />
       <Industry />
       <Comparision />
-      <Services/>
-      <Pricing/>
-      <Footer/>
+      <Services />
+      <Pricing />
+      <Assurance />
+      <Blogs />
+      <Testimonials/>
+      <Frequently/>
+      <Footer />
 
     </>
   )
