@@ -1,8 +1,6 @@
 "use client";
-import Image from "next/image";
 import React, { useState } from "react";
 import { IoIosAdd, IoIosRemove } from "react-icons/io";
-import { BsQuestionCircleFill } from 'react-icons/bs';
 import AskQuestions from "./AskQustions";
 
 
