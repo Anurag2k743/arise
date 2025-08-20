@@ -32,44 +32,46 @@ body{
 
 @layer base {
   h1 {
-    @apply text-[30px] leading-[40px] font-bold md:text-[58px] md:leading-[70px] text-white;
-    font-family:'RethinkSans-Bold'
+    @apply text-[24px] leading-[32px] md:text-[36px] md:leading-[44px] lg:text-[58px] lg:leading-[70px] font-bold text-white;
+    font-family: 'RethinkSans-Bold';
   }
+
   h2 {
-    @apply text-[30px] leading-[40px] font-semibold md:text-[58px] md:leading-[70px] text-white;
-    font-family:'RethinkSans-Bold'
+    @apply text-[22px] leading-[30px] md:text-[34px] md:leading-[42px] lg:text-[58px] lg:leading-[70px] font-semibold text-white;
+    font-family: 'RethinkSans-Bold';
   }
 
   h3 {
-    @apply text-[32px]  md:text-[43px] leading-[40px] md:leading-[50px]  text-white;
-    font-family:'RethinkSans-Bold'
+    @apply text-[20px] leading-[28px] md:text-[28px] md:leading-[36px] lg:text-[43px] lg:leading-[50px] text-white;
+    font-family: 'RethinkSans-Bold';
   }
 
   h4 {
-    @apply text-[32px] leading-[38px] font-medium text-white;
-    font-family:'RethinkSans-Bold'
+    @apply text-[18px] leading-[26px] md:text-[24px] md:leading-[32px] lg:text-[32px] lg:leading-[38px] font-medium text-white;
+    font-family: 'RethinkSans-Bold';
   }
 
   h5 {
-    @apply text-[18px] leading-[24px] font-medium text-white;
+    @apply text-[16px] leading-[22px] md:text-[18px] md:leading-[24px] lg:text-[20px] lg:leading-[28px] font-medium text-white;
   }
 
   h6 {
-    @apply text-[20px] leading-[24px] font-medium text-[#FFFFFF];
+    @apply text-[14px] leading-[20px] md:text-[16px] md:leading-[22px] lg:text-[20px] lg:leading-[24px] font-medium text-white;
   }
 
   p {
-    @apply text-[16px] md:text-[18px] leading-[24px] md:leading-[27px] font-normal text-[#A7ADBE];
+    @apply text-[14px] leading-[20px] md:text-[16px] md:leading-[24px] lg:text-[18px] lg:leading-[27px] font-normal text-[#A7ADBE];
   }
 
   span {
-    @apply text-[14px] leading-[20px] font-normal text-[#A7ADBE];
+    @apply text-[12px] leading-[18px] md:text-[14px] md:leading-[20px] lg:text-[14px] lg:leading-[20px] font-normal text-[#A7ADBE];
   }
 
   button {
-    @apply text-[18px] leading-[27px] font-medium text-white;
+    @apply text-[16px] leading-[24px] md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px] font-medium text-white;
   }
 }
+
 
 
 .header_container{
