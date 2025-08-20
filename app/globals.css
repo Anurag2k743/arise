@@ -1,112 +1,95 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
+/* Reset */
+* {
   margin: 0;
   padding: 0;
 }
 
+/* Fonts */
 @font-face {
   font-family: 'RethinkSans-Regular';
-  src: url('/fonts/RethinkSans-Regular.woff2') format('woff');
-  font-weight: 700;
+  src: url('/fonts/RethinkSans-Regular.woff2') format('woff2');
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'RethinkSans-Bold';
-  src: url('/fonts/RethinkSans-Bold.woff2') format('woff');
+  src: url('/fonts/RethinkSans-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
 }
 
-
-
-
-
-body{
-  font-family:RethinkSans-Regular ;
+body {
+  font-family: 'RethinkSans-Regular';
 }
 
+/* Base styles */
 @layer base {
   h1 {
-    @apply text-[24px] leading-[32px] md:text-[36px] md:leading-[44px] lg:text-[58px] lg:leading-[70px] font-bold text-white;
+    @apply text-2xl md:text-4xl lg:text-6xl leading-8 md:leading-11 lg:leading-[70px] font-bold text-white;
     font-family: 'RethinkSans-Bold';
   }
 
   h2 {
-    @apply text-[22px] leading-[30px] md:text-[34px] md:leading-[42px] lg:text-[58px] lg:leading-[70px] font-semibold text-white;
+    @apply text-xl md:text-3xl lg:text-6xl leading-7 md:leading-10 lg:leading-[70px] font-semibold text-white;
     font-family: 'RethinkSans-Bold';
   }
 
   h3 {
-    @apply text-[20px] leading-[28px] md:text-[28px] md:leading-[36px] lg:text-[43px] lg:leading-[50px] text-white;
+    @apply text-lg md:text-2xl lg:text-4xl leading-7 md:leading-9 lg:leading-[50px] text-white;
     font-family: 'RethinkSans-Bold';
   }
 
   h4 {
-    @apply text-[18px] leading-[26px] md:text-[24px] md:leading-[32px] lg:text-[32px] lg:leading-[38px] font-medium text-white;
+    @apply text-base md:text-xl lg:text-2xl leading-6 md:leading-8 lg:leading-9 font-medium text-white;
     font-family: 'RethinkSans-Bold';
   }
 
   h5 {
-    @apply text-[16px] leading-[22px] md:text-[18px] md:leading-[24px] lg:text-[20px] lg:leading-[28px] font-medium text-white;
+    @apply text-sm md:text-base lg:text-lg leading-5 md:leading-6 lg:leading-7 font-medium text-white;
   }
 
   h6 {
-    @apply text-[14px] leading-[20px] md:text-[16px] md:leading-[22px] lg:text-[20px] lg:leading-[24px] font-medium text-white;
+    @apply text-sm md:text-base lg:text-lg leading-5 md:leading-6 lg:leading-6 font-medium text-white;
   }
 
   p {
-    @apply text-[14px] leading-[20px] md:text-[16px] md:leading-[24px] lg:text-[18px] lg:leading-[27px] font-normal text-[#A7ADBE];
+    @apply text-sm md:text-base lg:text-lg leading-5 md:leading-6 lg:leading-7 font-normal text-[#A7ADBE];
   }
 
   span {
-    @apply text-[12px] leading-[18px] md:text-[14px] md:leading-[20px] lg:text-[14px] lg:leading-[20px] font-normal text-[#A7ADBE];
+    @apply text-xs md:text-sm leading-4 md:leading-5 lg:leading-5 font-normal text-[#A7ADBE];
   }
 
   button {
-    @apply text-[16px] leading-[24px] md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px] font-medium text-white;
+    @apply text-base md:text-lg lg:text-lg leading-6 md:leading-7 font-medium text-white;
   }
 }
 
-
-
-.header_container{
+/* Containers */
+.header_container {
   max-width: 1180px;
   width: 100%;
-  /* padding: 0px 16px; */
   margin: 0 auto;
 }
-.container{
+
+.container {
   max-width: 1260px;
   width: 100%;
   margin: 0 auto;
-  padding: 0px 16px;
+  padding: 0 16px;
 }
 
+/* Swiper */
 .swiper-wrapper {
   transition-timing-function: linear !important;
 }
-/* Make Swiper animation perfectly linear */
+
 .continuous-slider .swiper-wrapper {
   transition-timing-function: linear !important;
 }
 
-.light-rays-container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  pointer-events: none;
-  z-index: 3;
-  overflow: hidden;
-}
-
-
-.galaxy-container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
