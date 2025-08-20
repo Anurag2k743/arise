@@ -108,22 +108,22 @@ const Pricing = () => {
                   </button>
 
                   <div className="mt-5">
-                    <h5 className="font-semibold mb-4">What&apos;s included:</h5>
+                    <h5 className="font-semibold mb-4">What's included:</h5>
                     <ul className="space-y-2 text-sm">
                       {plan.features.map((feature, fIdx) => (
                         <li key={fIdx} className="flex items-center space-x-2 space-y-2 text-lg">
                           <span className="text-blue-400">
                             {feature.available
                               ? <span className="flex items-center justify-center mr-2 h-[20px] w-[20px] bg-[#3363FF] rounded-full">
-                                <Image src="/check.png" alt="check" width={8} height={8} />
-                              </span>
+                                  <Image src="/check.png" alt="check" width={8} height={8} />
+                                </span>
                               : <span className="flex items-center justify-center mr-2 h-[20px] w-[20px] bg-[#1c2354] rounded-full">
-                                <Image src="/cancel.png" alt="cancel" width={8} height={8} />
-                              </span>
+                                  <Image src="/cancel.png" alt="cancel" width={8} height={8} />
+                                </span>
                             }
                           </span>
                           <span className={feature.available ? "" : "text-gray-500"}>
-                            {feature.text.replace(/'/g, "&apos;")}
+                            {feature.text}
                           </span>
                         </li>
                       ))}
