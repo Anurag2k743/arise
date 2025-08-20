@@ -103,7 +103,7 @@ const Pricing = () => {
                     Get Started
                   </button>
                   <button className="w-full text-sm text-[#A7ADBE] flex justify-center items-center">
-                    Book a Call 
+                    Book a Call
                     <Image src="/bookcall.png" alt="check" width={20} height={20} className='ml-2' />
                   </button>
 
@@ -113,13 +113,13 @@ const Pricing = () => {
                       {plan.features.map((feature, fIdx) => (
                         <li key={fIdx} className="flex items-center space-x-2 space-y-2 text-lg">
                           <span className="text-blue-400">
-                            {feature.available 
+                            {feature.available
                               ? <span className="flex items-center justify-center mr-2 h-[20px] w-[20px] bg-[#3363FF] rounded-full">
-                                  <Image src="/check.png" alt="check" width={8} height={8} />
-                                </span> 
+                                <Image src="/check.png" alt="check" width={8} height={8} />
+                              </span>
                               : <span className="flex items-center justify-center mr-2 h-[20px] w-[20px] bg-[#1c2354] rounded-full">
-                                  <Image src="/cancel.png" alt="cancel" width={8} height={8} />
-                                </span>
+                                <Image src="/cancel.png" alt="cancel" width={8} height={8} />
+                              </span>
                             }
                           </span>
                           <span className={feature.available ? "" : "text-gray-500"}>

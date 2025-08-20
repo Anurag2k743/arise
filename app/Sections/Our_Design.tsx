@@ -2,6 +2,11 @@ import React from 'react'
 import Image from 'next/image';
 const Our_Design = () => {
 
+    const sectionInfo = {
+        tag: "Process",
+        heading: "Our Design Process",
+        desc: "Explore our streamlined approach to creating bespoke websites that align with your goals."
+    };
     const stepsData = [
         {
             step: "Step 01",
@@ -34,12 +39,23 @@ const Our_Design = () => {
     return (
         <>
             <section className='bg-[#00020F] pb-16 md:pb-24'>
-                <div className="container">
-                    <div className="flex flex-col justify-center items-center w-full">
-                        <h6 className='bg-[#000529] px-3 py-2 border border-[#161C44] inline-block text-center rounded-full w-fit mx-auto mb-3'>Process</h6>
-                        <h3 className='text-center'>Our Design Process</h3>
-                        <div className='max-w-xl text-center mt-3'>
-                            <p>Explore our streamlined approach to creating bespoke websites that align with your goals.</p>
+                <div className="pt-16 relative overflow-hidden">
+                    <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
+                        <Image src="/pricing.png" alt="rings background" className="w-[900px] sm:w-[1000px] opacity-50" width={717} height={268} />
+                    </div>
+                    <div className="container relative z-10">
+                        <div className="flex flex-col justify-center items-center w-full max-w-2xl mx-auto">
+                            <div className="flex items-center justify-center mb-4">
+                                <h6 className="bg-[#000529] px-3 py-2 border border-[#161C44] rounded-full text-white text-sm">
+                                    {sectionInfo.tag}
+                                </h6>
+                            </div>
+                            <h3 className="text-center md:text-left mb-4 text-white">
+                                {sectionInfo.heading}
+                            </h3>
+                            <div className="max-w-3xl mx-auto text-center text-[#d1d1d1] mb-10">
+                                <p>{sectionInfo.desc}</p>
+                            </div>
                         </div>
                     </div>
                 </div>

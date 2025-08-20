@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 
 const navItems = [
-  { label: "Home", href: "#home", active: true },
+  { label: "Home", href: "#hero", active: true },
   { label: "Works", href: "#works" },
   { label: "Blogs", href: "#blogs" },
   { label: "Timeline", href: "#timeline" },
@@ -15,7 +15,7 @@ const navItems = [
     items: [
       { label: "About Us", href: "#about" },
       { label: "Services", href: "#services" },
-      { label: "Team", href: "#team" },
+      { label: "Team", href: "#testimonials" },
     ],
   },
 ];

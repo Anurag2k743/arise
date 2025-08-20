@@ -40,7 +40,7 @@ const Testimonials = () => {
 
     return (
         <>
-            <section className='bg-[#00020F] px-4 pb-10'>
+            <section className='bg-[#00020F] px-4 pb-10 scroll-mt-32' id='testimonials'>
                 <div className="pt-16 relative overflow-hidden">
                     <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
                         <Image src="/pricing.png" alt="rings background" className="w-[900px] sm:w-[1000px] opacity-50" width={717} height={268} />

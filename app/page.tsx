@@ -18,6 +18,7 @@ import Assurance from './Sections/Assurance'
 import Blogs from './Sections/Blogs'
 import Testimonials from './Sections/Testimonials'
 import Frequently from './Frequently'
+import Projects from './Sections/Projects'
 
 const page = () => {
   return (
@@ -43,6 +44,7 @@ const page = () => {
       <Blogs />
       <Testimonials/>
       <Frequently/>
+      <Projects/>
       <Footer />
 
     </>

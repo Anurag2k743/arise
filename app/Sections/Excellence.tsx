@@ -113,7 +113,7 @@ const Excellence = () => {
                                         <div className="flex justify-between items-center">
                                             <div className="flex items-center">
                                                 <Image src={data.icon} height={46} width={46} alt={data.title} />
-                                                <h4>{data.title}</h4>
+                                                <h6>{data.title}</h6>
                                             </div>
 
                                             <div className="bg-[#0E122E] h-[34px] w-[46px] flex justify-center items-center rounded-full">

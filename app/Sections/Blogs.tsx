@@ -40,7 +40,7 @@ const Blogs = () => {
       readUrl: "#"
     },
     // New 3 dummy cards repeating same images
-       {
+    {
       id: 4,
       category: "UX Design",
       date: "Dec 02, 2024",
@@ -67,14 +67,37 @@ const Blogs = () => {
       readLabel: "Read Full Blog",
       readUrl: "#"
     },
- 
+
   ]
 
   const blogsToDisplay = showAll ? blogsdata : blogsdata.slice(0, 3);
 
   return (
-    <section className='bg-[#00020F]'>
-       <section className="py-12">
+    <section className='bg-[#00020F] scroll-mt-32' id='blogs'>
+
+      <div className="pt-16 relative overflow-hidden">
+        <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
+          <Image src="/pricing.png" alt="rings background" className="w-[900px] sm:w-[1000px] opacity-50" width={717} height={268} />
+        </div>
+        <div className="container relative z-10">
+          <div className="flex flex-col justify-center items-center w-full max-w-2xl mx-auto">
+            <div className="flex items-center justify-center mb-4">
+              <h6 className="bg-[#000529] px-3 py-2 border border-[#161C44] rounded-full text-white text-sm">
+                {sectionInfo.tag}
+              </h6>
+            </div>
+            <h3 className="text-center md:text-left mb-4 text-white">
+              {sectionInfo.heading}
+            </h3>
+            <div className="max-w-3xl mx-auto text-center text-[#d1d1d1] mb-10">
+              <p>{sectionInfo.desc}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {blogsToDisplay.map((blog) => (

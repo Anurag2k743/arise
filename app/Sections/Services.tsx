@@ -2,6 +2,14 @@ import React from 'react';
 import Image from "next/image";
 import ServiceSliders from '../Components/ServiceSliders';
 const Services = () => {
+
+    const sectionInfo = {
+        tag: "Services",
+        heading: "Explore Our Services",
+        desc: "Discover our comprehensive range of services tailored to enhance your digital presence."
+    };
+
+
     const servicesData = [
         {
             title: "Web Design",
@@ -35,19 +43,24 @@ const Services = () => {
 
     return (
         <>
-            <section className="bg-[#00020F] pb-16">
-                <div className="container">
-                    <div className="flex flex-col justify-center items-center w-full">
-                        <h6 className="bg-[#000529] px-3 py-2 border border-[#161C44] rounded-full mx-auto mb-4 text-white text-sm">
-                            Services
-                        </h6>
-                        <h3 className="text-center md:text-left mb-4">
-                            Explore Our Core Services
-                        </h3>
-                        <div className="max-w-lg mx-auto text-center  mb-10">
-                            <p>
-                                Discover our comprehensive range of services tailored to enhance your digital presence.
-                            </p>
+            <section className="bg-[#00020F] pb-16 scroll-mt-" id="services">
+                <div className="pt-16 relative overflow-hidden">
+                    <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
+                        <Image src="/pricing.png" alt="rings background" className="w-[900px] sm:w-[1000px] opacity-50" width={717} height={268} />
+                    </div>
+                    <div className="container relative z-10">
+                        <div className="flex flex-col justify-center items-center w-full max-w-2xl mx-auto">
+                            <div className="flex items-center justify-center mb-4">
+                                <h6 className="bg-[#000529] px-3 py-2 border border-[#161C44] rounded-full text-white text-sm">
+                                    {sectionInfo.tag}
+                                </h6>
+                            </div>
+                            <h3 className="text-center md:text-left mb-4 text-white">
+                                {sectionInfo.heading}
+                            </h3>
+                            <div className="max-w-md mx-auto text-center text-[#d1d1d1] mb-10">
+                                <p>{sectionInfo.desc}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -93,29 +106,29 @@ const Services = () => {
                                 </div>
                             ))}
                         </div>
-                        
-                        <div className="relative w-full mt-12">
+
+                        {/* <div className="relative w-full mt-12">
                             <div className="absolute inset-0 flex justify-center items-center">
                                 <div className="flex items-center px-4 bg-[#00020F] text-white text-sm">
                                     <Image
                                         src="/left_service.png"
                                         alt="left arrow"
-                                        width={512}
+                                        width={150}    // default width
                                         height={19}
-                                        className="mr-2"  />
-
+                                        className="mr-2 sm:w-[200px] md:w-[300px]" // grows on larger screens
+                                    />
                                     <span>Other Services</span>
-
                                     <Image
                                         src="/right_service.png"
                                         alt="right arrow"
-                                        width={512}
+                                        width={150}
                                         height={19}
-                                        className="ml-2"
+                                        className="ml-2 sm:w-[200px] md:w-[300px]"
                                     />
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
+
 
                         {/* <ServiceSliders /> */}
                     </div>

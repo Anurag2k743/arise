@@ -1,80 +1,116 @@
-// components/Footer.jsx
+"use client";
 import Image from "next/image";
-import { FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
+  type SocialItem = {
+    iconSrc: string;
+    url: string;
+  };
+
+  const footerData = {
+    left: {
+      logo: "/logo.svg",
+      tagline: "Book a Call For Free Consultation",
+      description:
+        "Experienced team delivering exceptional digital solutions tailored to your brand.",
+      buttonText: "Contact Us",
+      buttonIcon: "/work_arrow.png",
+      socials: [
+        { iconSrc: "/linkdin.png", url: "#" },
+        { iconSrc: "/xa.png", url: "#" },
+        { iconSrc: "/instagram.png", url: "#" },
+      ] as SocialItem[],
+    },
+    columns: [
+      {
+        title: "Home",
+        links: [
+          { text: "About" },
+          { text: "Services" },
+          { text: "Pricings" },
+          { text: "Tools" },
+          { text: "Works" },
+        ],
+      },
+      {
+        title: "Other",
+        links: [
+          { text: "Works" },
+          { text: "Blogs" },
+          { text: "Timeline" },
+          { text: "Waitlist" },
+          { text: "Privacy policy" },
+        ],
+      },
+      {
+        title: "Contact",
+        links: [{ text: "Contact" }, { text: "FAQ’s" }],
+      },
+    ],
+  } as const;
+
+  const { left, columns } = footerData;
+
   return (
-    <footer className="bg-[#00041f] text-white py-16">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 ">
+    <footer className="bg-[#00041F] text-white border-t border-[#131839]">
+      <div className="container px-4 mx-auto">
+        {/* grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-20 w-full">
           
           {/* Left Section */}
-          <div className="lg:col-span-5">
-            <div className="flex items-center gap-2 mb-4">
-              <Image src="/logo.svg" alt="Arise" width={123} height={50} />
+          <div className="lg:col-span-5 border-b lg:border-b-0 lg:border-r border-[#131839] pr-0 lg:pr-8 py-12 lg:py-14">
+            <div className="flex items-center gap-2 mb-7">
+              <Image src={left.logo} alt="Arise" width={123} height={50} />
             </div>
-            <p className="mb-4">Book a Call For Free Consultation</p>
-            <p className="text-gray-400 mb-4 text-sm">
-              Experienced team delivering exceptional digital solutions tailored to your brand.
-            </p>
-            <button className="py-3 px-6 md:py-4 md:px-8 rounded-full bg-gradient-to-b from-[#4C75FF] to-[#1A4FFF]">
-              Contact Us →
+            <h5 className="mb-2">{left.tagline}</h5>
+            <div className="max-w-base">
+              <p className="mb-6">{left.description}</p>
+            </div>
+            <button className="py-3 px-6 md:py-4 md:px-8 flex justify-center items-center gap-1 border border-[#161C44] rounded-full bg-gradient-to-b from-[#4C75FF] to-[#1A4FFF]">
+              {left.buttonText}
+              <Image src={left.buttonIcon} height={20} width={20} alt="work_arrow" />
             </button>
-            <div className="flex items-center gap-3 mt-4">
-              <a href="#" className="p-2 bg-[#0B132B] rounded-lg hover:bg-blue-600">
-                <FaTwitter />
-              </a>
-              <a href="#" className="p-2 bg-[#0B132B] rounded-lg hover:bg-blue-600">
-                <FaInstagram />
-              </a>
-              <a href="#" className="p-2 bg-[#0B132B] rounded-lg hover:bg-blue-600">
-                <FaGithub />
-              </a>
+            <div className="mt-10">
+              <span>Our Social Handles</span>
+              <div className="flex items-center gap-3 mt-4">
+                {left.socials.map(({ iconSrc, url }, i) => (
+                  <a
+                    key={i}
+                    href={url}
+                    className="p-2 bg-[#161C44] rounded-lg h-[42px] w-[42px] flex items-center justify-center"
+                  >
+                    <Image src={iconSrc} alt="social" width={17} height={17} />
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
 
           {/* Right Section */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 pt-12 lg:pt-14 flex flex-col justify-between">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-20">
-              
-              {/* Home Links */}
-              <div>
-                <h4 className="font-semibold mb-4">Home</h4>
-                <ul className="space-y-2 text-gray-400 text-sm">
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Pricings</a></li>
-                  <li><a href="#">Tools</a></li>
-                  <li className="flex items-center gap-2">
-                    <a href="#">Works</a>
-                    <span className="bg-blue-600 text-xs px-2 py-0.5 rounded-full">New</span>
-                  </li>
-                </ul>
-              </div>
+              {columns.map((col, idx) => (
+                <div key={idx}>
+                  <h5 className="mb-4">{col.title}</h5>
+                  <ul className="space-y-5 text-lg">
+                    {col.links.map((item, idx2) => (
+                      <li key={idx2}>
+                        <a href="#" className="text-[#A7ADBE] relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-[2px] after:h-[1px] after:w-0 after:bg-gradient-to-b from-[#4C75FF] to-[#1A4FFF] hover:after:w-full after:transition-all">
+                          {item.text}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
 
-              {/* Other Links */}
-              <div>
-                <h4 className="font-semibold mb-4">Other</h4>
-                <ul className="space-y-2 text-gray-400 text-sm">
-                  <li><a href="#">Works</a></li>
-                  <li><a href="#">Blogs</a></li>
-                  <li><a href="#">Timeline</a></li>
-                  <li><a href="#">Waitlist</a></li>
-                  <li><a href="#">Privacy policy</a></li>
-                </ul>
-              </div>
-
-              {/* Contact Links */}
-              <div>
-                <h4 className="font-semibold mb-4">Contact</h4>
-                <ul className="space-y-2 text-gray-400 text-sm">
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">FAQ’s</a></li>
-                </ul>
-              </div>
-
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-10 py-4 border-t border-[#131839]">
+              <p>Template by Anurag</p>
+              <p>© 2024 Arise. All rights reserved.</p>
             </div>
           </div>
+
         </div>
       </div>
     </footer>

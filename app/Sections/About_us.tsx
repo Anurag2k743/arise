@@ -22,7 +22,7 @@ const About_us = () => {
 
 
         <>
-            <section className='bg-[#00020F]'>
+            <section className='bg-[#00020F] scroll-mt-32' id='about'>
                 <div className="container">
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-12'>
                         <div>

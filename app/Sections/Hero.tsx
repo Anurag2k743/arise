@@ -3,7 +3,7 @@ import { MoveRight } from 'lucide-react';
 const HeroSection = () => {
   return (
     <>
-      <section className="z-10 bg-black text-white overflow-hidden pt-24 bg-[url('/Background.png')] bg-cover bg-center bg-no-repeat min-h-[770px] sm:min-h-[800px] md:min-h-[960px]">
+      <section className="z-10 bg-black text-white overflow-hidden pt-24 bg-[url('/Background.png')] bg-cover bg-center bg-no-repeat min-h-[770px] sm:min-h-[800px] md:min-h-[960px] scroll-mt-32" id='hero'>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-20 text-center">
 
           <div className="max-w-lg mx-auto hidden sm:block mt-8">

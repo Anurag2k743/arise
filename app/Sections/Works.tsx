@@ -3,6 +3,16 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 
 const Works = () => {
+
+    const sectionInfo = {
+        tag: " Works",
+        heading: "Explore Our Recent Projects",
+        desc: "Browse through our portfolio showcasing diverse, innovative web design projects and client successe"
+    };
+
+
+   
+
     const projectsData = [
         {
             title: "Clever — SaaS Landing Page",
@@ -57,19 +67,26 @@ const Works = () => {
     const [showAll, setShowAll] = useState(false);
 
     return (
-        <section className="bg-[#00020F]">
+        <section className="bg-[#00020F] scroll-mt-32" id='works'>
             <div className="container">
-                {/* Section Heading */}
-                <div className="flex flex-col justify-center items-center w-full">
-                    <h6 className="bg-[#000529] px-3 py-2 border border-[#161C44] inline-block text-center rounded-full w-fit mx-auto mb-4">
-                        Works
-                    </h6>
-                    <h3 className="mb-4">Explore Our Recent Projects</h3>
-                    <div className="max-w-lg mx-auto text-center">
-                        <p>
-                            Browse through our portfolio showcasing diverse, innovative web design
-                            projects and client successes.
-                        </p>
+                <div className="pt-16 relative overflow-hidden">
+                    <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
+                        <Image src="/pricing.png" alt="rings background" className="w-[900px] sm:w-[1000px] opacity-50" width={717} height={268} />
+                    </div>
+                    <div className="container relative z-10">
+                        <div className="flex flex-col justify-center items-center w-full max-w-2xl mx-auto">
+                            <div className="flex items-center justify-center mb-4">
+                                <h6 className="bg-[#000529] px-3 py-2 border border-[#161C44] rounded-full text-white text-sm">
+                                    {sectionInfo.tag}
+                                </h6>
+                            </div>
+                            <h3 className="text-center md:text-left mb-4 text-white">
+                                {sectionInfo.heading}
+                            </h3>
+                            <div className="max-w-3xl mx-auto text-center text-[#d1d1d1] mb-10">
+                                <p>{sectionInfo.desc}</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -122,4 +139,3 @@ const Works = () => {
 };
 
 export default Works;
- 

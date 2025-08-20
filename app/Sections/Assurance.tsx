@@ -1,12 +1,13 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
-
 const Assurance = () => {
     return (
-        <section className="bg-[#00020F] md:py-12 h-[607px] flex items-center justify-center px-4">
-            <div className="w-[1160px] mx-auto bg-gradient-to-b from-[rgba(0,4,31,0)] to-[rgba(0,4,31,0.6)] rounded-3xl border border-[#080B1C] p-1">
+        <section className=" bg-[#00020F] md:py-12 h-[607px] flex items-center justify-center px-4 overflow-hidden">
+            {/* Card content */}
+            <div className="relative z-10 w-[1160px] mx-auto bg-gradient-to-b from-[rgba(0,4,31,0)] to-[rgba(0,4,31,0.6)] rounded-3xl border border-[#080B1C] p-1">
                 <div className='bg-[#00020F]'>
-                    <div className="text-center border border-white/10 rounded-3xl p-6 md:p-12">
+                    <div className="text-center border border-white/10 rounded-3xl p-6 md:p-12 z-50">
                         <Image
                             src="/assurance_logo.png"
                             alt="Assurance Image"
@@ -16,8 +17,7 @@ const Assurance = () => {
                         />
                         <h4 className='my-2'>Assurance Trial Package</h4>
                         <p className="text-base max-w-lg mx-auto mt-0">
-                            Explore our services confidently with this trial package tailored for assessing our agency&apos;s quality and
-                            capabilities.
+                            Explore our services confidently with this trial package tailored for assessing our agency&apos;s quality and capabilities.
                         </p>
                         <div className="mt-7">
                             <span className="text-white text-4xl font-bold mb-4">$979/m</span>
@@ -29,6 +29,7 @@ const Assurance = () => {
                     </div>
                 </div>
             </div>
+
         </section>
     )
 }
