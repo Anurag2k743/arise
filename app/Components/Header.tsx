@@ -259,7 +259,7 @@ export default function Header() {
           className={`lg:hidden px-6 transition-all duration-300 ease-in-out overflow-hidden ${
             mobileMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
           }`}
-  >
+        >
           <nav className="flex flex-col space-y-3 mb-3">
             {navItems.map((item, index) =>
               item.dropdown ? (
