@@ -2,7 +2,6 @@ import React from 'react'
 import Image from "next/image";
 
 const Pricing = () => {
-
   const sectionInfo = {
     tag: "Pricing",
     heading: "Transparent Pricing Options",
@@ -108,7 +107,7 @@ const Pricing = () => {
                   </button>
 
                   <div className="mt-6">
-                    <h6 className=" mb-4">What's included:</h6>
+                    <h6 className="mb-4">{`What's included:`}</h6>
                     <ul className="space-y-2 text-sm">
                       {plan.features.map((feature, fIdx) => (
                         <li key={fIdx} className="flex items-center space-x-2 space-y-2 ">
