@@ -52,8 +52,8 @@ const Pricing = () => {
   ];
 
   return (
-    <section className='bg-[#00020F] pt-0 md:pt-32'>
-      <div className="pt-16 relative overflow-hidden">
+    <section className='bg-[#00020F] pt-0 md:pt-32 scrooll-mt-32' id='pricing'>
+      <div className="pt-0 md:pt-16 relative overflow-hidden">
         <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
           <Image src="/pricing.png" alt="rings background" className="w-[900px] sm:w-[1000px] opacity-50" width={717} height={268} />
         </div>
@@ -78,46 +78,46 @@ const Pricing = () => {
         <div className="w-full lg:w-[1160px] mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {pricingPlans.map((plan, idx) => (
-              <div key={idx} className={`relative py-2 ${idx === 1 ? 'mt-10' : 'mt-0'}`}>
+              <div key={idx} className={`relative py-2 ${idx === 1 ? 'mt-10 md:mt-0' : 'md:mt-0'}`}>
                 {idx === 1 && (
-                  <div className="absolute -top-10 left-0 right-0 h-16 bg-[#3362FF] rounded-t-3xl text-center pt-3 text-white">
+                  <div className="absolute -top-10 left-0 right-0 h-16 bg-[#3362FF] rounded-t-3xl text-center pt-2 text-white">
                     Most Popular
                   </div>
                 )}
 
                 <div className="bg-[#00041F] border border-[#162447] rounded-3xl p-7 text-white relative z-10">
-                  <div className="flex gap-2 mb-4">
+                  <div className="flex gap-2 mb-5">
                     <Image src={plan.icon} alt={`${plan.title} icon`} width={24} height={24} />
                     <h4 className="text-lg font-bold">{plan.title}</h4>
                   </div>
 
-                  <h3 className="text-3xl font-extrabold mb-2">
+                  <h3 className="text-3xl font-extrabold mb-3">
                     ${plan.price}/m{" "}
-                    <span className="text-sm bg-[#122952] px-2 py-1 rounded ml-2">
+                    <span className="text-sm bg-[#0E122E] px-2 py-1 rounded-full ml-2 border border-[#161C44]">
                       15% Off
                     </span>
                   </h3>
-                  <p className="text-gray-400 mb-4">Pause or cancel anytime.</p>
+                  <p className="text-gray-400 mb-6">Pause or cancel anytime.</p>
 
                   <button className="w-full bg-[#101636] py-3 rounded-full mb-3">
                     Get Started
                   </button>
-                  <button className="w-full text-sm text-[#A7ADBE] flex justify-center items-center">
+                  <button className="w-full text-lg text-[#A7ADBE] flex justify-center items-center">
                     Book a Call
                     <Image src="/bookcall.png" alt="check" width={20} height={20} className='ml-2' />
                   </button>
 
-                  <div className="mt-5">
-                    <h5 className="font-semibold mb-4">What's included:</h5>
+                  <div className="mt-6">
+                    <h6 className=" mb-4">What's included:</h6>
                     <ul className="space-y-2 text-sm">
                       {plan.features.map((feature, fIdx) => (
-                        <li key={fIdx} className="flex items-center space-x-2 space-y-2 text-lg">
-                          <span className="text-blue-400">
+                        <li key={fIdx} className="flex items-center space-x-2 space-y-2 ">
+                          <span className="text-[#3363FF]">
                             {feature.available
-                              ? <span className="flex items-center justify-center mr-2 h-[20px] w-[20px] bg-[#3363FF] rounded-full">
+                              ? <span className="flex items-center text-lg justify-center mr-2 h-[20px] w-[20px] bg-[#3363FF] rounded-full">
                                   <Image src="/check.png" alt="check" width={8} height={8} />
                                 </span>
-                              : <span className="flex items-center justify-center mr-2 h-[20px] w-[20px] bg-[#1c2354] rounded-full">
+                              : <span className="flex items-center text-lg justify-center mr-2 h-[20px] w-[20px] bg-[#1c2354] rounded-full">
                                   <Image src="/cancel.png" alt="cancel" width={8} height={8} />
                                 </span>
                             }

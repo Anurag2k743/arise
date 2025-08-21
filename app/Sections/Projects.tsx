@@ -26,15 +26,15 @@ const Projects = () => {
                     <div className="w-full max-w-6xl mx-auto px-4">
                         <div className='bg-[#00020F] p-1 border border-[#080B1C] rounded-3xl'>
                             <div className="text-center border border border-[#080B1C] rounded-3xl p-6 sm:p-10 lg:p-20 bg-[url('/project.jpg')] bg-cover bg-center">
-                                <h4 className='my-2'>{sectionData.sectionTitle}</h4>
-                                <p className="text-base max-w-lg mx-auto mt-0">
+                                <h3 className='my-2'>{sectionData.sectionTitle}</h3>
+                                <p className=" max-w-lg mx-auto mt-0">
                                     {sectionData.callToAction}
                                 </p>
                                 <div className='mt-6 flex flex-wrap justify-center gap-3 sm:gap-4'>
                                     {sectionData.features.map((feature, index) => (
                                         <div key={index} className='flex items-center gap-2 p-2 rounded-full border border-[#0E122E]'>
                                             <Image src="/check_arrow.png" alt={`Feature ${index + 1}`} width={20} height={20} />
-                                            <span className='text-sm'>{feature.name}</span>
+                                            <span className='text-base'>{feature.name}</span>
                                         </div>
                                     ))}
                                 </div>

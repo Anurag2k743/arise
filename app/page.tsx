@@ -27,7 +27,6 @@ const page = () => {
       <div className="-mt-80 md:-mt-60" >
         <Slider />
       </div>
-
       <Permotionslides />
       <Brand />
       <OurMision />

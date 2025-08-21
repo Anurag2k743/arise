@@ -52,7 +52,7 @@ const Comparision = () => {
             <div className="container mx-auto px-4">
               
 
-                 <div className="pt-16 relative overflow-hidden">
+                 <div className="pt-0 lg:pt-16 relative overflow-hidden">
                                     <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
                                         <Image src="/pricing.png" alt="rings background" className="w-[900px] sm:w-[1000px] opacity-50" width={717} height={268} />
                                     </div>
@@ -107,20 +107,19 @@ const Comparision = () => {
                     </div>
 
                     {/* Rows */}
-                    <div className="space-y-3">
+                    <div className="space-y-3 ">
                         {comparisonData.items.map((item, index) => (
                             <div
                                 key={index}
-                                className="grid grid-cols-1 md:grid-cols-2 rounded-xl overflow-hidden border border-[#0B132B]">
+                                className="grid grid-cols-1 md:grid-cols-2 rounded-xl overflow-hidden border border-[#0B132B] ">
                                 {/* Left */}
                                 
-                                <div className="flex items-start gap-3 p-4 bg-[#00041F] border-b md:border-b-0 md:border-r border-[#0B132B]">
+                                <div className="flex items-start gap-3 py-4 px-5 bg-[#00041F] border-b md:border-b-0 md:border-r border-[#0B132B] bg-[url(/comparision.png)] bg-cover bg-center">
                                     <IoMdStarHalf className="text-white" size={24} />
                                     <p className="text-white">{item.left}</p>
                                 </div>
-
                                 {/* Right */}
-                                <div className="flex items-start gap-3 p-4 bg-[#00041F]">
+                                <div className="flex items-start gap-3 py-4 px-5 bg-gradient-to-r from-[rgba(51,99,255,0.15)] via-[rgba(51,99,255,0)] to-[#00041F]">
                                     <Image
                                         src={item.rightIcon}
                                         alt="Right Icon"

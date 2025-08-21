@@ -39,7 +39,7 @@ const AskQuestions = () => {
                         </div>
                         <button
                             type="submit"
-                            className="bg-gradient-to-b from-[#4C75FF] to-[#1A4FFF] rounded-full py-2 px-5 sm:py-3 sm:px-6 font-semibold text-sm sm:text-base whitespace-nowrap"
+                            className="bg-gradient-to-b from-[#4C75FF] to-[#1A4FFF] border border-[#131839] rounded-full py-2 px-5 sm:py-3 sm:px-6  text-sm sm:text-base whitespace-nowrap"
                         >
                             Ask Question
                         </button>

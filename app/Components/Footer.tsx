@@ -25,26 +25,29 @@ export default function Footer() {
       {
         title: "Home",
         links: [
-          { text: "About" },
-          { text: "Services" },
-          { text: "Pricings" },
-          { text: "Tools" },
-          { text: "Works" },
+          { text: "About", url: "#about" },
+          { text: "Services", url: "#services" },
+          { text: "Pricings", url: "#pricing" },
+          { text: "Tools", url: "#excellence" },
+          { text: "Works", url: "#works" },
         ],
       },
       {
         title: "Other",
         links: [
-          { text: "Works" },
-          { text: "Blogs" },
-          { text: "Timeline" },
-          { text: "Waitlist" },
-          { text: "Privacy policy" },
+          { text: "Works", url: "#works" },
+          { text: "Blogs", url: "#blogs" },
+          { text: "Timeline", url: "#timeline" },
+          { text: "Waitlist", url: "#waitlist" },
+          { text: "Privacy policy", url: "#privacy" },
         ],
       },
       {
         title: "Contact",
-        links: [{ text: "Contact" }, { text: "FAQ’s" }],
+        links: [
+          { text: "Contact", url: "#contact" },
+          { text: "FAQ’s", url: "#faq" },
+        ],
       },
     ],
   } as const;
@@ -95,7 +98,10 @@ export default function Footer() {
                   <ul className="space-y-5 text-lg">
                     {col.links.map((item, idx2) => (
                       <li key={idx2}>
-                        <a href="#" className="text-[#A7ADBE] relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-[2px] after:h-[1px] after:w-0 after:bg-gradient-to-b from-[#4C75FF] to-[#1A4FFF] hover:after:w-full after:transition-all">
+                        <a
+                          href={item.url}
+                          className="text-[#A7ADBE] relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-[2px] after:h-[1px] after:w-0 after:bg-gradient-to-b from-[#4C75FF] to-[#1A4FFF] hover:after:w-full after:transition-all"
+                        >
                           {item.text}
                         </a>
                       </li>

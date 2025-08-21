@@ -43,8 +43,8 @@ const Services = () => {
 
     return (
         <>
-            <section className="bg-[#00020F] pb-16 scroll-mt-" id="services">
-                <div className="pt-16 relative overflow-hidden">
+            <section className="bg-[#00020F] pb-16 scroll-mt-8 md:scroll-mt-32" id="services">
+                <div className="pt-0 md:pt-16 relative overflow-hidden">
                     <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
                         <Image src="/pricing.png" alt="rings background" className="w-[900px] sm:w-[1000px] opacity-50" width={717} height={268} />
                     </div>
@@ -86,7 +86,7 @@ const Services = () => {
                                     </div>
 
                                     {/* Description */}
-                                    <p className=" mb-4">{service.description}</p>
+                                    <p className="mb-4">{service.description}</p>
 
                                     {/* Divider */}
                                     <div className="border-t border-[#161C44] mb-4"></div>
@@ -94,7 +94,7 @@ const Services = () => {
                                     {/* Features */}
                                     <ul className="space-y-5">
                                         {service.features.map((feature, i) => (
-                                            <li key={i} className="flex items-start text-gray-300 text-sm">
+                                            <li key={i} className="flex items-start items-center text-gray-300 text-lg">
                                                 <span className="flex items-center justify-center mr-2 h-[20px] w-[20px] bg-[#08951E] rounded-full">
                                                     <Image src="/check.png" alt="check" width={8} height={8} />
                                                 </span>

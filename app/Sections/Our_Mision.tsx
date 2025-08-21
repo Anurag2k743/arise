@@ -126,21 +126,18 @@ export default function OurMission() {
   }, [])
 
   return (
-    <section className="bg-[#00020F] py-12 relative overflow-hidden">
+    <section className="bg-[#00020F] lg:pt-12 relative overflow-hidden">
       <div className="container relative z-10">
         <div className="border border-[#080B1C] p-1 rounded-3xl">
           <div
             ref={containerRef}
-            className="relative overflow-hidden rounded-3xl text-center p-6 md:p-24 
-              bg-[url('/our_mision.png')] bg-cover bg-center border border-[#0E122E]"
-          >
-            {/* Animation canvas */}
+            className="relative overflow-hidden rounded-3xl text-center p-12 md:p-24 
+              bg-[url('/our_mision.png')] bg-cover bg-center border border-[#0E122E]">
             <canvas
               ref={canvasRef}
               className="absolute inset-0 w-full h-full pointer-events-none"
             />
 
-            {/* Gradient overlay */}
             <div
               className="absolute inset-0 pointer-events-none"
               style={{

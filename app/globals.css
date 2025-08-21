@@ -6,6 +6,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Fonts */
@@ -30,12 +31,12 @@ body {
 /* Base styles */
 @layer base {
   h1 {
-    @apply text-2xl md:text-4xl lg:text-6xl leading-8 md:leading-10 lg:leading-[70px] font-bold text-white;
+    @apply text-2xl md:text-4xl lg:text-6xl leading-8 md:leading-10 lg:leading-[70px]  text-white;
     font-family: 'RethinkSans-Bold';
   }
 
   h2 {
-    @apply text-xl md:text-3xl lg:text-6xl leading-7 md:leading-10 lg:leading-[70px] font-semibold text-white;
+    @apply text-xl md:text-3xl lg:text-6xl leading-7 md:leading-10 lg:leading-[70px]  text-white;
     font-family: 'RethinkSans-Bold';
   }
 
@@ -54,7 +55,7 @@ body {
   }
 
   h6 {
-    @apply text-sm md:text-base lg:text-lg leading-5 md:leading-6 lg:leading-6 font-medium text-white;
+    @apply text-sm md:text-base lg:text-xl leading-5 md:leading-6 lg:leading-6 font-medium text-white;
   }
 
   p {
@@ -79,7 +80,7 @@ body {
 }
 
 .container {
-  max-width: 1260px;
+  max-width: 1292px;
   width: 100%;
   margin: 0 auto;
   padding: 0 16px;
@@ -94,3 +95,8 @@ body {
   transition-timing-function: linear !important;
 }
 
+a:focus,
+a:active {
+  outline: none !important;
+  box-shadow: none !important;
+}

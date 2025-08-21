@@ -73,9 +73,8 @@ const Blogs = () => {
   const blogsToDisplay = showAll ? blogsdata : blogsdata.slice(0, 3);
 
   return (
-    <section className='bg-[#00020F] scroll-mt-32' id='blogs'>
-
-      <div className="pt-16 relative overflow-hidden">
+    <section className='bg-[#00020F] scroll-mt-8 md:scroll-mt-32' id='blogs'>
+      <div className="pt-0 md:pt-16 relative overflow-hidden">
         <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
           <Image src="/pricing.png" alt="rings background" className="w-[900px] sm:w-[1000px] opacity-50" width={717} height={268} />
         </div>
@@ -115,8 +114,8 @@ const Blogs = () => {
 
                   <div className='py-5 px-4'>
                     <div className="flex items-center gap-3 mb-3 text-md">
-                      <span className="bg-[#121529] px-3 py-1 rounded-full">{blog.category}</span>
-                      <span>{blog.date}</span>
+                      <span className="bg-[#121529] px-3 py-1 rounded-full border border-[#FFFFFF1F]">{blog.category}</span>
+                      <span className='text-[#6D7792]'>{blog.date}</span>
                     </div>
 
                     <h4 className="text-lg font-semibold text-white mb-4 leading-snug">{blog.title}</h4>
@@ -124,6 +123,7 @@ const Blogs = () => {
                       {blog.readLabel}
                       <Image src="/blog_arrow.png" alt='blog_arrow' height={12} width={12} className="ml-1" />
                     </a>
+
                   </div>
                 </div>
               </div>

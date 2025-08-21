@@ -11,7 +11,7 @@ const Works = () => {
     };
 
 
-   
+
 
     const projectsData = [
         {
@@ -67,9 +67,9 @@ const Works = () => {
     const [showAll, setShowAll] = useState(false);
 
     return (
-        <section className="bg-[#00020F] scroll-mt-32" id='works'>
+        <section className="bg-[#00020F] scroll-mt-8 md:scroll-mt-32" id='works'>
             <div className="container">
-                <div className="pt-16 relative overflow-hidden">
+                <div className="pt-0 md:pt-16 relative overflow-hidden">
                     <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
                         <Image src="/pricing.png" alt="rings background" className="w-[900px] sm:w-[1000px] opacity-50" width={717} height={268} />
                     </div>
@@ -83,7 +83,7 @@ const Works = () => {
                             <h3 className="text-center md:text-left mb-4 text-white">
                                 {sectionInfo.heading}
                             </h3>
-                            <div className="max-w-3xl mx-auto text-center text-[#d1d1d1] mb-10">
+                            <div className="max-w-lg mx-auto text-center text-[#d1d1d1] mb-10">
                                 <p>{sectionInfo.desc}</p>
                             </div>
                         </div>
@@ -97,7 +97,7 @@ const Works = () => {
                             key={index}
                             className="overflow-hidden bg-[linear-gradient(180deg,#0A0C1E_0%,rgba(10,12,30,0.98)_0.01%,rgba(10,12,30,0)_72.36%)] p-3 rounded-3xl">
                             <div className='border border-white/10 border-b-0 p-2 rounded-3xl'>
-                                <div className="relative w-full h-[384px] shadow-[0px_-2px_6px_0px_#00000040]">
+                                <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 shadow-[0px_-2px_6px_0px_#00000040]">
                                     <div className="absolute bottom-0 left-0 w-full h-[100px] bg-gradient-to-t from-black/100 to-transparent z-10"></div>
                                     <Image
                                         src={project.image}

@@ -10,9 +10,9 @@ const Frequently = () => {
     }
     return (
         <>
-            <section className='bg-[#00020F]'>
+            <section className='bg-[#00020F] scroll-mt-12 lg:scroll-mt-32' id='faq'>
                 <div className="container">
-                    <div className="pt-16 relative overflow-hidden">
+                    <div className="pt-0 md:pt-16 relative overflow-hidden">
                         <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
                             <Image src="/pricing.png" alt="rings background" className="w-[900px] sm:w-[1000px] opacity-50" width={717} height={268} />
                         </div>

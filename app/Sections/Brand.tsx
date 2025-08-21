@@ -37,13 +37,13 @@ const Brand = () => {
 
         <section>
           <div className="container">
-            <div className="bg-[#0A0C1E] p-2 rounded-3xl">
+            <div className="bg-[#0A0C1E] rounded-3xl">
               <video
                 src="/Video/meeting_video.mp4"
                 controls
                 autoPlay={true}
                 muted
-                className="rounded-3xl w-full h-auto">
+                className="rounded-3xl w-full h-auto lg:h-[650px] object-cover">
               </video>
             </div>
           </div>

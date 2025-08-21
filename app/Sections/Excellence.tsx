@@ -62,7 +62,7 @@ const Excellence = () => {
     return (
 
         <>
-            <section className="bg-[#00020F] py-16 md:py-28">
+            <section className="bg-[#00020F] py-16 md:py-28 scroll-mt-16 lg:scroll-mt-16" id="excellence">
                 <div className="container">
                     <div className="flex flex-col justify-center items-center w-full">
                         <h6 className="bg-[#000529] px-3 py-2 border border-[#161C44] inline-block text-center rounded-full w-fit mx-auto mb-4">

@@ -53,7 +53,7 @@ const Our_Design = () => {
                             <h3 className="text-center md:text-left mb-4 text-white">
                                 {sectionInfo.heading}
                             </h3>
-                            <div className="max-w-3xl mx-auto text-center text-[#d1d1d1] mb-10">
+                            <div className="max-w-xl mx-auto text-center text-[#d1d1d1] mb-10">
                                 <p>{sectionInfo.desc}</p>
                             </div>
                         </div>
@@ -61,7 +61,7 @@ const Our_Design = () => {
                 </div>
 
                 <div className="container">
-                    <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 mt-16 md:mt-32'>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 mt-14 md:mt-32'>
                         {
                             stepsData.map((stepsData, index) => (
                                 <div key={index} className='p-4 md:p-8 bg-[#00041F] rounded-2xl border border-[#131839]'>

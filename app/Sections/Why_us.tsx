@@ -40,7 +40,7 @@ const Why_us = () => {
 
     return (
         <>
-            <section className='bg-[#00020F] py-16 md:py-24'>
+            <section className='bg-[#00020F] pt-16 md:py-24'>
                 <div className="container">
                     <div className="flex flex-col justify-center items-center ">
                         <h6 className='bg-[#000529] px-3 py-2 border border-[#161C44] inline-block text-center rounded-full w-fit mx-auto mb-3'>Why Us</h6>
