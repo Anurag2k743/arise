@@ -11,9 +11,9 @@ const projects = [
   { image: '/regulate.png', label: 'Website Design - Regulate' },
   { image: '/Appit.png', label: 'App Design - Appit' },
   { image: '/Container.png', label: 'Website Design - Wanderly' },
-  { image: '/mobile.png', label: 'App Design - Waitlista' },
+  { image: '/Mobile.png', label: 'App Design - Waitlista' },
   { image: '/regulate.png', label: 'Website Design - Regulate' },
-  { image: '/mobile2.png', label: 'App Design - Appit' },
+  { image: '/Mobile.png', label: 'App Design - Appit' },
 ];
 
 export default function Slider() {
