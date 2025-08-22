@@ -8,17 +8,17 @@ const Brand = () => {
     {
       title: "Custom Designs",
       description: "Tailored websites meticulously crafted to reflect your brand.",
-      icon: "/icon1.png"
+      icon: "Icon1.png"
     },
     {
       title: "Fast Performance",
       description: "Optimized for lightning-fast speed to enhance user experience.",
-      icon: "/icon2.png"
+      icon: "Icon2.png"
     },
     {
       title: "SEO Friendly",
       description: "Designed to improve SEO and increase visibility effortlessly.",
-      icon: "/icon3.png"
+      icon: "Icon3.png"
     }
   ];
 
