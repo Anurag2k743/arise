@@ -56,7 +56,7 @@ const Why_us = () => {
                         {
                             features.map((features, index) => (
                                 <div key={index} className='border border-[#0E122E] bg-[#00020F] rounded-2xl py-6 md:py-10 px-4 md:px-8 mb-4 relative'>
-                                    <Image src={features.icon} width={38} height={38} alt={features.title} className='absolute top-[-19]' />
+                                    <Image src={features.icon} width={38} height={38} alt={features.title} className='absolute -top-5' />
                                     <h5 className='my-2'>{features.title}</h5>
                                     <p>{features.description}</p>
 
