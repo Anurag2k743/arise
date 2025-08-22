@@ -29,7 +29,7 @@ const Brand = () => {
           <div className="flex items-center justify-center space-x-2 sm:space-x-4 px-4 flex-wrap mb-5">
             <div className="hidden sm:block h-[2px] w-32 sm:w-64 bg-[linear-gradient(to_right,_rgba(23,29,69,0),_#171D45)]" />
             <p className="text-center text-white text-sm whitespace-nowrap">
-              See How We Can Help Your Brand
+              See How We Can Help Your brand
             </p>
             <div className="hidden sm:block h-[2px] w-32 sm:w-64 bg-[linear-gradient(to_left,_rgba(23,29,69,0),_#171D45)]" />
           </div>
