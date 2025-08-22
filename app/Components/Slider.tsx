@@ -9,7 +9,7 @@ const projects = [
   { image: '/Container.png', label: 'Website Design - Wanderly' },
   { image: '/Mobile.png', label: 'App Design - Waitlista' },
   { image: '/regulate.png', label: 'Website Design - Regulate' },
-  { image: '/mobile2.png', label: 'App Design - Appit' },
+  { image: '/connect.png', label: 'App Design - Appit' },
   { image: '/Container.png', label: 'Website Design - Wanderly' },
   { image: '/mobile.png', label: 'App Design - Waitlista' },
   { image: '/regulate.png', label: 'Website Design - Regulate' },
