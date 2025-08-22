@@ -6,11 +6,11 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 
 const projects = [
-  { image: '/container.png', label: 'Website Design - Wanderly' },
-  { image: '/mobile.png', label: 'App Design - Waitlista' },
+  { image: '/Container.png', label: 'Website Design - Wanderly' },
+  { image: '/Mobile.png', label: 'App Design - Waitlista' },
   { image: '/regulate.png', label: 'Website Design - Regulate' },
   { image: '/mobile2.png', label: 'App Design - Appit' },
-  { image: '/container.png', label: 'Website Design - Wanderly' },
+  { image: '/Container.png', label: 'Website Design - Wanderly' },
   { image: '/mobile.png', label: 'App Design - Waitlista' },
   { image: '/regulate.png', label: 'Website Design - Regulate' },
   { image: '/mobile2.png', label: 'App Design - Appit' },
@@ -45,7 +45,8 @@ export default function Slider() {
               <SwiperSlide
                 key={index}
                 style={{ width: `${slideWidth}px` }}
-                className="!p-0 !mx-3">
+                className="!p-0 !mx-3"
+              >
                 <div className="rounded-2xl shadow-lg overflow-hidden w-full">
                   <div className="h-[307px] w-full">
                     <Image
@@ -54,10 +55,13 @@ export default function Slider() {
                       width={slideWidth}
                       height={307}
                       className="w-full h-full object-cover rounded-2xl"
+                      unoptimized
                     />
                   </div>
                   <div className="text-left py-2 px-2">
-                    <p className="text-sm text-white">{project.label.replace(/'/g, "&apos;")}</p>
+                    <p className="text-sm text-white">
+                      {project.label.replace(/'/g, "&apos;")}
+                    </p>
                   </div>
                 </div>
               </SwiperSlide>
