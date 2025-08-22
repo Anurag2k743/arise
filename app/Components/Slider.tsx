@@ -6,11 +6,11 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 
 const projects = [
-  { image: '/Container.png', label: 'Website Design - Wanderly' },
+  { image: '/container.png', label: 'Website Design - Wanderly' },
   { image: '/mobile.png', label: 'App Design - Waitlista' },
   { image: '/regulate.png', label: 'Website Design - Regulate' },
   { image: '/mobile2.png', label: 'App Design - Appit' },
-  { image: '/Container.png', label: 'Website Design - Wanderly' },
+  { image: '/container.png', label: 'Website Design - Wanderly' },
   { image: '/mobile.png', label: 'App Design - Waitlista' },
   { image: '/regulate.png', label: 'Website Design - Regulate' },
   { image: '/mobile2.png', label: 'App Design - Appit' },
@@ -45,8 +45,7 @@ export default function Slider() {
               <SwiperSlide
                 key={index}
                 style={{ width: `${slideWidth}px` }}
-                className="!p-0 !mx-3"
-              >
+                className="!p-0 !mx-3">
                 <div className="rounded-2xl shadow-lg overflow-hidden w-full">
                   <div className="h-[307px] w-full">
                     <Image
