@@ -8,17 +8,17 @@ const Brand = () => {
     {
       title: "Custom Designs",
       description: "Tailored websites meticulously crafted to reflect your brand.",
-      icon: "Icon1.png"
+      icon: "/Icon1.png"
     },
     {
       title: "Fast Performance",
       description: "Optimized for lightning-fast speed to enhance user experience.",
-      icon: "Icon2.png"
+      icon: "/Icon2.png"
     },
     {
       title: "SEO Friendly",
       description: "Designed to improve SEO and increase visibility effortlessly.",
-      icon: "Icon3.png"
+      icon: "/Icon3.png"
     }
   ];
 
@@ -34,7 +34,6 @@ const Brand = () => {
             <div className="hidden sm:block h-[2px] w-32 sm:w-64 bg-[linear-gradient(to_left,_rgba(23,29,69,0),_#171D45)]" />
           </div>
         </div>
-
         <section>
           <div className="container">
             <div className="bg-[#0A0C1E] rounded-3xl">

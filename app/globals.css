@@ -86,11 +86,12 @@ body {
 }
 
 /* Swiper */
-.swiper-wrapper {
+/* .swiper-wrapper {
   transition-timing-function: linear !important;
-}
+  
+} */
 
-.continuous-slider .swiper-wrapper {
+.continuous-slider .SwiperSlide {
   transition-timing-function: linear !important;
 }
 

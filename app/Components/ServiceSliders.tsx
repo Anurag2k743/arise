@@ -12,6 +12,7 @@ const services = [
   { name: "Branding", icon: "/services3.png" },
   { name: "Packaging Design", icon: "/services4.png" },
   { name: "UI/UX Design", icon: "/services5.png" },
+
   { name: "Logo Design", icon: "/services1.png" },
   { name: "Social Post Design", icon: "/services2.png" },
   { name: "Branding", icon: "/services3.png" },
@@ -32,10 +33,11 @@ const ServiceSliders = () => {
             modules={[Autoplay]}
             loop={true}
             speed={4000}
-            autoplay={{
-              delay: 0,
-              disableOnInteraction: false,
-            }}
+            // autoplay={{
+            //   delay: 0,
+            //   disableOnInteraction: false,
+            // }}
+
             spaceBetween={9}
             slidesPerView={3}
             breakpoints={{
