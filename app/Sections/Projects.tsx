@@ -21,7 +21,7 @@ const Projects = () => {
 
     return (
         <>
-            <section className='bg-[#00020F] py-12 md:py-24 lg:py-48'>
+            <section className='bg-[#00020F] py-12 md:py-24'>
                 <div className="flex items-center justify-center md:py-12">
                     <div className="w-full max-w-6xl mx-auto px-4">
                         <div className='bg-[#00020F] p-1 border border-[#080B1C] rounded-3xl'>

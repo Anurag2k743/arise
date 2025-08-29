@@ -41,9 +41,9 @@ const page = () => {
       <Pricing />
       <Assurance />
       <Blogs />
-      <Testimonials/>
-      <Frequently/>
-      <Projects/>
+      <Testimonials />
+      <Frequently />
+      <Projects />
       <Footer />
 
     </>

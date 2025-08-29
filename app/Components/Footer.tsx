@@ -7,6 +7,11 @@ export default function Footer() {
     url: string;
   };
 
+  const today = new Date();
+
+  const currentYear = today.getFullYear();
+
+
   const footerData = {
     left: {
       logo: "/logo.svg",
@@ -113,7 +118,7 @@ export default function Footer() {
 
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-10 py-4 border-t border-[#131839]">
               <p>Template by Anurag</p>
-              <p>© 2024 Arise. All rights reserved.</p>
+              <p>© {currentYear} Arise. All rights reserved.</p>
             </div>
           </div>
 
