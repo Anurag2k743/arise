@@ -40,9 +40,22 @@ const Industry = () => {
                                     Capture and retain more customers by optimizing your website&apos;s
                                     design for engagement.
                                 </p>
-                                <button className="bg-gradient-to-b from-[#4C75FF] to-[#1A4FFF] py-3 px-6 md:py-4 md:px-8 rounded-full text-white">
-                                    Start a Project
-                                </button>
+                                <div className="flex justify-center items-center">
+                                    <button className="relative overflow-hidden group bg-gradient-to-b from-[#4C75FF] to-[#1A4FFF] py-2 sm:py-4 px-6 sm:px-8 rounded-full flex items-center gap-2">
+                                        <span className="absolute inset-0 bg-[radial-gradient(100%_100%_at_50%_100%,#101636_14.38%,#0C1027_100%)] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out z-0"></span>
+                                        <span className="relative z-10 flex items-center gap-2 text-white">
+                                            <a href="#contact" className="whitespace-nowrap">
+                                                Start a Project
+                                            </a>
+                                            <Image
+                                                src="/btn_arrow.png"
+                                                height={20}
+                                                width={20}
+                                                alt="arrowbtn"
+                                                className="transition-transform duration-400 ease-in-out group-hover:translate-x-3" />
+                                        </span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>

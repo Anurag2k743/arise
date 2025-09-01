@@ -23,9 +23,23 @@ const Assurance = () => {
                             <span className="text-white text-5xl font-bold">$979/m</span>
                             <p  className='mt-2'>Pause or cancel anytime.</p>
                         </div>
-                        <button className="mt-7 bg-gradient-to-b from-[#4C75FF] to-[#1A4FFF] py-3 px-6 rounded-full text-white  hover:from-[#5C85FF] hover:to-[#2A5FFF] transition-colors duration-300">
-                            Start a Project
-                        </button>
+                      <div className='flex justify-center items-center mt-7'>
+                            <button className="relative overflow-hidden group bg-[radial-gradient(100%_100%_at_50%_100%,#101636_14.38%,#0C1027_100%)] py-2 sm:py-4 px-6 sm:px-8 rounded-full flex items-center gap-2">
+                                <span className="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-b from-[#4C75FF] to-[#1A4FFF] group-hover:left-0 transition-all duration-500 ease-out z-0"></span>
+                                <span className="relative z-10 flex items-center gap-2 text-white">
+                                    <a href="#contact" className="whitespace-nowrap">
+                                       Start a Project
+                                    </a>
+                                    <Image
+                                        src="/btn_arrow.png"
+                                        height={20}
+                                        width={20}
+                                        alt="arrowbtn"
+                                        className="transition-transform duration-400 ease-in-out group-hover:translate-x-3"
+                                    />
+                                </span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
